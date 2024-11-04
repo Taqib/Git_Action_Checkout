@@ -1,0 +1,2 @@
+Overview
+This hands-on lab introduces the fundamentals of GitHub Actions by implementing a basic workflow that demonstrates repository checkout and command execution. You'll learn how to create a workflow file, understand its structure, and execute various commands.
