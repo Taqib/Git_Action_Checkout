@@ -41,3 +41,8 @@ jobs:
       # Step 6: Show memory usage
       - name: Check memory usage
         run: free -h
+
+      # Step 7: Conditional step
+      - name: Conditional step
+        if: github.event_name == 'push'
+        run: echo "This was triggered by a push event"
