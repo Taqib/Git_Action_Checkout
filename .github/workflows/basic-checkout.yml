@@ -25,6 +25,7 @@ jobs:
           echo "Repository: $GITHUB_REPOSITORY"
           echo "Operating System: $(uname -a)"
           echo "Current Directory: $(pwd)"
+          echo "Current Date and Time: $(date)"
       
       # Step 4: Check software versions
       - name: Check versions
@@ -32,3 +33,11 @@ jobs:
           echo "Node version: $(node --version)"
           echo "Python version: $(python --version)"
           echo "Git version: $(git --version)"
+      
+      # Step 5: Show disk space
+      - name: Check disk space
+        run: df -h
+
+      # Step 6: Show memory usage
+      - name: Check memory usage
+        run: free -h
